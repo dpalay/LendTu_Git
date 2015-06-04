@@ -31,6 +31,8 @@ group :development do
   gem 'quiet_assets'
 end
 
+gem 'recaptcha', :require => 'recaptcha/rails'
+
 #Omniauth
 gem 'omniauth'
 gem 'omniauth-facebook'

@@ -36,6 +36,8 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 #Omniauth
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'koala'
+
 gem 'omniauth-google-oauth2'
 
 #Authentication With Devise

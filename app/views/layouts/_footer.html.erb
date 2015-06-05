@@ -1,0 +1,20 @@
+<% if (ENV["RAILS_ENV"] == "development") || admin? -%>
+    <div id="debug">
+      <fieldset id="params_debug_info" class="debug_info">
+        <legend>params</legend>
+        <%= debug(params) %>
+      </fieldset>
+      <fieldset id="session_debug_info" class="debug_info">
+        <legend>session</legend>
+        <%= debug(session) %>
+      </fieldset>
+      <fieldset id="env_debug_info" class="debug_info">
+        <legend>env</legend>
+        <%= debug(request.env) %>
+      </fieldset>
+      <fieldset id="request_debug_info" class="debug_info">
+        <legend>request</legend>
+        <%= debug(request) %>
+      </fieldset>
+    </div>
+<% end -%>
